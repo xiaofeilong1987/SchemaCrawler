@@ -1,0 +1,14 @@
+--- Command ---
+
+-c=script (short for -command=script)
+  Processes a script file, such as JavaScript against the database
+  
+--- Output Options ---
+
+-outputformat=<outputformat>
+  Where <outputformat> is the file path to the JavaScript
+  file
+
+-o=<outputfile> (short for -outputfile=<outputfile>)
+	Optional 
+	<outputfile> is the path to the output file

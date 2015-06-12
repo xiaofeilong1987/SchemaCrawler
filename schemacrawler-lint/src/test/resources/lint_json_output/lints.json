@@ -1,0 +1,182 @@
+[
+{
+  "table_lints": [
+    {
+      "lints": [{
+        "severity": "medium",
+        "description": "useless surrogate key",
+        "id": "schemacrawler.tools.linter.LinterUselessSurrogateKey",
+        "value": "PK_EXTRA_PK"
+      }],
+      "name": "EXTRA_PK",
+      "fullName": "PUBLIC.FOR_LINT.EXTRA_PK",
+      "type": "table"
+    },
+    {
+      "lints": [
+        {
+          "severity": "medium",
+          "description": "no indexes",
+          "id": "schemacrawler.tools.linter.LinterTableWithNoIndexes",
+          "value": "true"
+        },
+        {
+          "severity": "medium",
+          "description": "spaces in name, or reserved word",
+          "id": "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+          "value": "\"Global Counts\""
+        },
+        {
+          "severity": "medium",
+          "description": "spaces in name, or reserved word",
+          "id": "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+          "value": "\"Global Count\""
+        },
+        {
+          "severity": "medium",
+          "description": "single column",
+          "id": "schemacrawler.tools.linter.LinterTableWithSingleColumn",
+          "value": "true"
+        }
+      ],
+      "name": "\"Global Counts\"",
+      "fullName": "PUBLIC.FOR_LINT.\"Global Counts\"",
+      "type": "table"
+    },
+    {
+      "lints": [
+        {
+          "severity": "medium",
+          "description": "spaces in name, or reserved word",
+          "id": "schemacrawler.tools.linter.LinterTableWithQuotedNames",
+          "value": "\"UPDATE\""
+        },
+        {
+          "severity": "low",
+          "description": "too many binary objects",
+          "id": "schemacrawler.tools.linter.LinterTooManyLobs",
+          "value": "\"UPDATE\", PRESS_RELEASE"
+        }
+      ],
+      "name": "PUBLICATIONS",
+      "fullName": "PUBLIC.FOR_LINT.PUBLICATIONS",
+      "type": "table"
+    },
+    {
+      "lints": [
+        {
+          "severity": "high",
+          "description": "foreign key and primary key have different data types",
+          "id": "schemacrawler.tools.linter.LinterForeignKeyMismatch",
+          "value": "FK_WRITERS_PUBLICATION"
+        },
+        {
+          "severity": "high",
+          "description": "redundant index",
+          "id": "schemacrawler.tools.linter.LinterRedundantIndexes",
+          "value": "IDX_A1_WRITERS"
+        },
+        {
+          "severity": "medium",
+          "description": "unique index with nullable columns",
+          "id": "schemacrawler.tools.linter.LinterNullColumnsInIndex",
+          "value": "IDX_U_WRITERS"
+        },
+        {
+          "severity": "medium",
+          "description": "column where NULL may be intended",
+          "id": "schemacrawler.tools.linter.LinterNullIntendedColumns",
+          "value": "ADDRESS2"
+        },
+        {
+          "severity": "medium",
+          "description": "column where NULL may be intended",
+          "id": "schemacrawler.tools.linter.LinterNullIntendedColumns",
+          "value": "COUNTRY"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "ADDRESS1, ADDRESS2"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "PHONE1, PHONE2"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "FAX, FAX3"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "EMAIL1, EMAIL2"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "HOMEEMAIL11, HOMEEMAIL12"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns are not consecutive",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "FAX, FAX3"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns don't have the same data-type",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "PHONE1, PHONE2"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns don't have the same data-type",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "FAX, FAX3"
+        },
+        {
+          "severity": "medium",
+          "description": "incrementing columns don't have the same data-type",
+          "id": "schemacrawler.tools.linter.LinterTableWithIncrementingColumns",
+          "value": "EMAIL1, EMAIL2"
+        }
+      ],
+      "name": "WRITERS",
+      "fullName": "PUBLIC.FOR_LINT.WRITERS",
+      "type": "table"
+    },
+    {
+      "lints": [{
+        "severity": "high",
+        "description": "foreign key and primary key have different data types",
+        "id": "schemacrawler.tools.linter.LinterForeignKeyMismatch",
+        "value": "FK_ΠΊΝΑΚΑΒΆΣΗΣΔΕΔΟΜΈΝΩΝ_PUBLICATIONS"
+      }],
+      "name": "ΠΊΝΑΚΑΒΆΣΗΣΔΕΔΟΜΈΝΩΝ",
+      "fullName": "PUBLIC.FOR_LINT.ΠΊΝΑΚΑΒΆΣΗΣΔΕΔΟΜΈΝΩΝ",
+      "type": "table"
+    }
+  ],
+  "database_lints": {"lints": [
+      {
+        "severity": "medium",
+        "description": "column with same name but different data types",
+        "id": "schemacrawler.tools.linter.LinterColumnTypes",
+        "value": "ID [BIGINT, INTEGER]"
+      },
+      {
+        "severity": "medium",
+        "description": "cycles in table relationships",
+        "id": "schemacrawler.tools.linter.LinterTableCycles",
+        "value": "true"
+      }
+    ]}
+}]

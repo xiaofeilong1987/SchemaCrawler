@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SchemaCrawler Example</title>
+    <link rel="stylesheet" type="text/css" href="../sc.css">
+    <link rel="stylesheet" type="text/css" href="examples/sc.css">
+  </head>
+  <body>
+$bodyContent
+    <hr/>
+    &#169 2000-2015, Sualeh Fatehi. <br />
+    <a href="http://schemacrawler.sourceforge.net/">SchemaCrawler</a>
+  </body>
+</html>
