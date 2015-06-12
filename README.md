@@ -1,6 +1,6 @@
 # SchemaCrawler 12.01.01
 
-** Clone of "SchemaCrawler", a database schema discovery, comprehension and documentation tool made by Sualeh Fatehi and hosted on sourceforge.**
+### Clone of "SchemaCrawler", a database schema discovery, comprehension and documentation tool made by Sualeh Fatehi and hosted on sourceforge. ###
 
 >> ## Important Message
 **Please note that going forward, there is a just single SchemaCrawler download, that provides support for all databases, and includes examples. The database specific downloads remain for old versions.**
